@@ -13,244 +13,356 @@
   --white-text: rgb(255,255,255);
 }
 
-body {
-  width: 100%;
-  background: linear-gradient(180deg,rgb(12,112,242,0.5) 23%, rgb(12,112,242, 0) 27%) var(--bg-black);
-} 
+  body {
+    width: 100%;
+    background: linear-gradient(180deg,rgb(12,112,242,0.5) 23%, rgb(12,112,242, 0) 27%) var(--bg-black);
+  } 
 
-a {
-  text-decoration: none;
-  color: var(--white-text);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-ul {
-  list-style: none;
-}
-
-/* Navegador */
-#nav-main {
-  width: 100%;
-  height: 100px;
-  background-color: var(--bg-black);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--border-nav);
-}
-
-  #nav-menu {
-    padding-left: 90px;
-  }
-    #nav-menu a {
-      margin-right: 50px;
-    }
-      #nav-menu a:hover {
-        color: var(--hover-nav);
-      }
-
-  #btn-login {
-    width: 80px;
-    height: 39px;
-    background-color: var(--bg-blue);
-    margin-right: 100px;
-    border: 0;
-    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-
+  a {
+    text-decoration: none;
+    color: var(--white-text);
     font-weight: 600;
-    font-size: 15px;
-    line-height: 24px;
-    color: var(--white-text);
-
-    transition: transform ,.5s ease;
-    cursor: pointer;
-  }
-    #btn-login:hover {
-      transform: scale(1.1);
-    }
-
-/* Cabeçalho */
-header {
-  text-align: center;
-  color: var(--white-text);
-}
-  header h1 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 75px;
-    line-height: 96px;
-
-    margin: 90px 0 20px 0;
+    font-size: 18px;
+    line-height: 30px;
   }
 
-  header h2 {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 40px;
-
-    margin-bottom: 70px;
+  ul {
+    list-style: none;
   }
 
-  .highlight-black {
+  /* Navegador */
+  #nav-main {
+    height: 100px;
     background-color: var(--bg-black);
-    color: var(--white-text);
-    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-nav);
   }
 
-/* Principal */
-main {
-  height: 100%;
-}
-
-  #contact {
-    height: 100%;
-    padding: 125px 375px 0px 375px;
-  }
-
-    .form-groups {
-      display: flex;
-      flex-direction: column;
+    #nav-menu {
+      padding-left: 90px;
     }
-
-      .form-groups label{
-        font-weight: 600;
-        font-size: 23px;
-        line-height: 36px;
-        color: var(--white-text);
-
-        margin-left: 5px;
+      #nav-menu a {
+        margin-right: 50px;
       }
-
-      .form-groups 
-      #name, #surname, #email,
-      #phone, #creative-text  {
-        width: 525px;
-        height: 18px;
-        background-color: rgba(255,255,255,0.9);
-        
-        border: 0;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        padding: 16px 0 16px 17px;
-      }
-        .form-groups input::placeholder {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 24px;
-          color: rgba(57,57,57,0.5);
+        #nav-menu a:hover {
+          color: var(--hover-nav);
         }
 
-      .form-groups
-      #sector {
-        margin: 20px 0 10px 0;
-      }
-
-      .form-groups
-      #checkbox{
-        margin-left: 13px;
-      }
-        .form-groups
-        #checkbox label {
-          margin-right: 25px;
-        }
-        
-        .form-groups
-        #checkbox input {
-          width: 15px;
-          height: 15px;
-          margin-bottom: 35px;
-      
-        }
-
-      .form-groups
-      .style-label-checkbox {
-        font-size: 18px;
-      }
-
-    .form-groups
-    #btn-register-form {
-      width: 542px;
-      height: 50px;
-      background-color: rgba(12,112,242,0.9);
+    #btn-login {
+      width: 80px;
+      height: 39px;
+      background-color: var(--bg-blue);
+      margin-right: 100px;
       border: 0;
-      border-radius: 10px;
-      margin-top: 60px;
-      margin-bottom: 278px;
+      box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
 
       font-weight: 600;
-      font-size: 25px;
-      line-height: 38px;
-      color: var(--white-text);
-
-      cursor: pointer;
-    }
-
-/* Rodapé */
-footer {
-  background-color: var(--bg-blue); 
-  height: 450px;
-  text-align: center;
-}
-  footer #text-footer {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--white-text);
-    margin-top: 40px;
-  }
-
-  #template-footer {
-    display: grid;
-    grid-auto-flow: column;
-  }
-
-    #template-footer
-    #other-training {
-      width: 300px;
-      height: 300px;
-      margin: 56px 0 0 72px;
-    }
-
-    #template-footer
-    #about-company {
-      width: 225px;
-      height: 270px;
-      margin-top: 56px;
-    }
-
-    #template-footer
-    #info-company {
-      font-weight: 800;
-      font-size: 20px;
+      font-size: 15px;
       line-height: 24px;
       color: var(--white-text);
 
-      margin-top: 150px;
+      transition: transform ,.5s ease;
+      cursor: pointer;
+    }
+      #btn-login:hover {
+        transform: scale(1.1);
+      }
+
+  /* Cabeçalho */
+  header {
+    width: 71%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white-text);
+  }
+    header h1 {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 75px;
+      line-height: 96px;
+
+      margin: 90px 0 20px 0;
     }
 
-    #template-footer
-    .highlight-black-title {
-      font-weight: 800;
-      font-size: 23px;
-      line-height: 30px;
-      
+    header h2 {
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 40px;
+
+      margin-bottom: 70px;
+    }
+
+    .highlight-black {
       background-color: var(--bg-black);
       color: var(--white-text);
-      
-      margin-bottom: 30px;
-      padding: 10px;
-      border-radius: 10px;
+      font-weight: bold;
     }
 
-    #template-footer li {
-      margin-top: 25px;
-    }
+  /* Principal */
+  main {
+    width: 100%;
+    height: 100%;
+  }
 
-    #template-footer a {
+    #contact {
+      display: flex;
+      justify-content: center;
+      margin-top: 191px;
+    }
+      /* Formulario */
+      .form-groups {
+        display: flex;
+        flex-direction: column;
+      }
+
+        .form-groups label, #label{
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 36px;
+          color: var(--white-text);
+
+          margin-left: 5px;
+        }
+
+        .form-groups
+        #label {
+          margin: 20px 0 10px 0;
+        }
+
+        .form-groups 
+        input[type=text],
+        input[type=tel], 
+        input[type=email] {
+          width: 525px;
+          height: 18px;
+          background-color: rgba(255,255,255,0.9);
+          
+          border: 0;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          padding: 16px 0 16px 17px;
+        }
+          .form-groups input::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: rgba(57,57,57,0.5);
+          }
+
+        /* Área de Interesse */
+        .form-groups
+        #checkbox{
+          margin-left: 13px;
+        }
+          .form-groups
+          #checkbox label {
+            margin-right: 25px;
+          }
+          
+          .form-groups
+          #checkbox input {
+            width: 15px;
+            height: 15px;
+            margin-bottom: 35px;
+        
+          }
+
+        .form-groups
+        .style-label-checkbox {
+          font-size: 18px;
+        }
+
+      /* Botão Registrar */
+      .form-groups
+      #btn-register-form {
+        width: 542px;
+        height: 50px;
+        background-color: rgba(12,112,242,0.9);
+        border: 0;
+        border-radius: 10px;
+        margin: 60px 0 278px 0;
+
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 38px;
+        color: var(--white-text);
+
+        cursor: pointer;
+        box-shadow: 0 6px 4px rgba(12,112,242,0.25);
+      }
+
+  /* Rodapé */
+  footer {
+    background-color: var(--bg-blue); 
+    text-align: center;
+  }
+    footer #text-footer {
       font-weight: 600;
       font-size: 20px;
-      line-height: 30px;
+      color: var(--white-text);
+      padding: 40px 0;
     }
 
+    #template-footer {
+      display: grid;
+      grid-auto-flow: column;
+    }
 
+      #template-footer
+      #other-training {
+        margin: 56px 0 0 72px;
+      }
+
+      #template-footer
+      #about-company {
+        margin-top: 56px;
+      }
+
+      #template-footer
+      #info-company {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--white-text);
+
+        margin-top: 150px;
+      }
+
+      #template-footer
+      .highlight-black-title {
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 30px;
+        
+        background-color: var(--bg-black);
+        color: var(--white-text);
+        
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      #template-footer li {
+        margin-top: 25px;
+      }
+
+      #template-footer a {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+
+@media only screen and (max-width: 600px){
+
+  /* Navegador */
+  #nav-main {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 10px;
+  }
+  
+    #nav-menu {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+    }
+      #nav-menu a {
+        margin: 0;
+        height: 40px;
+      }
+
+    #btn-login {
+      width: 40%;
+      margin-right: 0;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      
+    }
+
+  /* Cabeçalho */
+  header {
+    width: 100%;
+  }
+
+    header h1 {
+      font-size: 45px;
+      margin-top: 30px
+    }
+
+    header h2 {
+      font-size: 30px;
+      margin: 0 5px;
+    }
+  
+  /* Principal */
+  #contact {
+    margin-top: 50px;
+  }
+  
+    /* Formulário */
+    .form-groups {
+      align-items: center;
+    }
+
+    .form-groups
+    input[type=text],
+    input[type=tel],
+    input[type=email] {
+      width: 70%;
+    }
+      .form-groups input::placeholder {
+        font-size: 13px;
+      }
+
+    .form-groups
+    label, #label {
+      font-size: 15px;
+    }
+
+    /* Área de Interesse */
+    .form-groups
+    .style-label-checkbox {
+      font-size: 13px;
+    }
+
+    /* Botão Registrar */
+    .form-groups
+    #btn-register-form {
+      width: 100%;
+      margin: 30px 0 70px 0;
+    }
+    
+  /* Rodapé */
+  footer
+  #text-footer {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+
+    #template-footer {
+      grid-auto-flow: row;
+    }
+
+      #template-footer
+      #other-training,
+      #about-company {
+        margin: 30px 0 0 0;
+      }
+
+      #template-footer
+      #info-company {
+        margin: 20px 10px;
+      }
+
+      #template-footer li {
+        margin-top: 15px;
+      }
+
+      #template-footer a {
+        font-size: 20px;
+      }
+}
