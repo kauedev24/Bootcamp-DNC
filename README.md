@@ -2,10 +2,9 @@
 # Bootcamp-DNC
 
 ## Página desenvolvida a partir de um designer no FIGMA.
+https://www.figma.com/design/GOjJRC68ygIYHMOb0KHa3u/Untitled?node-id=1-2&t=PwGMcJyT201qDIbj-0
 
-![Imagem Pagina Proposta](img/projeto-figma.png)
-
-link da hospedagem:
+link da hospedagem: https://bootcampdnctest.netlify.app/
 
 ### **TECNOLOGIAS**
 - HTML
