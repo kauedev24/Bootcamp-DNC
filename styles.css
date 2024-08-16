@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Inter";
+}
+
+:root {
+  --bg-black: rgb(48,48,48);
+  --bg-blue: rgb(12,112,242);
+  --border-nav: rgb(186,186,186); 
+  --hover-nav: rgb(204,204,204);
+  --white-text: rgb(255,255,255);
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(180deg,rgb(12,112,242,0.5) 23%, rgb(12,112,242, 0) 27%) var(--bg-black);
+} 
+
+a {
+  text-decoration: none;
+  color: var(--white-text);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navegador */
+#nav-main {
+  width: 100%;
+  height: 100px;
+  background-color: var(--bg-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-nav);
+}
+
+  #nav-menu {
+    padding-left: 90px;
+  }
+    #nav-menu a {
+      margin-right: 50px;
+    }
+      #nav-menu a:hover {
+        color: var(--hover-nav);
+      }
+
+  #btn-login {
+    width: 80px;
+    height: 39px;
+    background-color: var(--bg-blue);
+    margin-right: 100px;
+    border: 0;
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--white-text);
+
+    transition: transform ,.5s ease;
+    cursor: pointer;
+  }
+    #btn-login:hover {
+      transform: scale(1.1);
+    }
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  color: var(--white-text);
+}
+  header h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 96px;
+
+    margin: 90px 0 20px 0;
+  }
+
+  header h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+
+    margin-bottom: 70px;
+  }
+
+  .highlight-black {
+    background-color: var(--bg-black);
+    color: var(--white-text);
+    font-weight: bold;
+  }
+
+/* Principal */
+main {
+  height: 100%;
+}
+
+  #contact {
+    height: 100%;
+    padding: 125px 375px 0px 375px;
+  }
+
+    .form-groups {
+      display: flex;
+      flex-direction: column;
+    }
+
+      .form-groups label{
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 36px;
+        color: var(--white-text);
+
+        margin-left: 5px;
+      }
+
+      .form-groups 
+      #name, #surname, #email,
+      #phone, #creative-text  {
+        width: 525px;
+        height: 18px;
+        background-color: rgba(255,255,255,0.9);
+        
+        border: 0;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 16px 0 16px 17px;
+      }
+        .form-groups input::placeholder {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: rgba(57,57,57,0.5);
+        }
+
+      .form-groups
+      #sector {
+        margin: 20px 0 10px 0;
+      }
+
+      .form-groups
+      #checkbox{
+        margin-left: 13px;
+      }
+        .form-groups
+        #checkbox label {
+          margin-right: 25px;
+        }
+        
+        .form-groups
+        #checkbox input {
+          width: 15px;
+          height: 15px;
+          margin-bottom: 35px;
+      
+        }
+
+      .form-groups
+      .style-label-checkbox {
+        font-size: 18px;
+      }
+
+    .form-groups
+    #btn-register-form {
+      width: 542px;
+      height: 50px;
+      background-color: rgba(12,112,242,0.9);
+      border: 0;
+      border-radius: 10px;
+      margin-top: 60px;
+      margin-bottom: 278px;
+
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 38px;
+      color: var(--white-text);
+
+      cursor: pointer;
+    }
+
+/* Rodapé */
+footer {
+  background-color: var(--bg-blue); 
+  height: 450px;
+  text-align: center;
+}
+  footer #text-footer {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white-text);
+    margin-top: 40px;
+  }
+
+  #template-footer {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+    #template-footer
+    #other-training {
+      width: 300px;
+      height: 300px;
+      margin: 56px 0 0 72px;
+    }
+
+    #template-footer
+    #about-company {
+      width: 225px;
+      height: 270px;
+      margin-top: 56px;
+    }
+
+    #template-footer
+    #info-company {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 24px;
+      color: var(--white-text);
+
+      margin-top: 150px;
+    }
+
+    #template-footer
+    .highlight-black-title {
+      font-weight: 800;
+      font-size: 23px;
+      line-height: 30px;
+      
+      background-color: var(--bg-black);
+      color: var(--white-text);
+      
+      margin-bottom: 30px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    #template-footer li {
+      margin-top: 25px;
+    }
+
+    #template-footer a {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+
